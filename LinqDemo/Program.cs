@@ -14,7 +14,9 @@ namespace LinqDemo
             // linq query syntax
             var query = from word in words
                         where word.Length <= 5
+                       // orderby word.Length
                         select word;
+                         
             foreach (string w in query)
             {
                 Console.Write(w.ToString() + " ");

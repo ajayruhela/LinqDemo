@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FA82DD46-B737-4FA8-BF72-DAFF8A813A49}</ProjectGuid>
+    <ProjectGuid>{AEAF4D16-C7C5-4AAD-982C-44F3B10C9100}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LinqDemo</RootNamespace>
-    <AssemblyName>LinqDemo</AssemblyName>
+    <RootNamespace>LinqToSql</RootNamespace>
+    <AssemblyName>LinqToSql</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,12 +42,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MoreOptionswithLinq.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="contents\linq_sql_architecture.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
