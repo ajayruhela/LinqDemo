@@ -1,0 +1,18 @@
+﻿Querying with LINQ To SQL
+The rules for executing a query with LINQ to SQL is similiar to that of a standard 
+LINQ query i.e. query is executted either deferred or immediate. There are various 
+components that play a role in execution of a query with LINQ to SQL and these are 
+the following ones.
+
+LINQ to SQL API – requests query execution on behalf of an application and sent it
+to LINQ to SQL Provider
+
+LINQ to SQL Provider - converts query to Transact SQL(T-SQL) and sends the new query
+to the ADO Provider for execution
+
+ADO Provider - After execution of the query, send the results in the form of a 
+DataReader to LINQ to SQL Provider which in turn converts it into a form of user 
+object
+
+It should be noted that before executing a LINQ to SQL query, it is vital to 
+connect to the data source via DataContext class.
