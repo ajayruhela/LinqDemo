@@ -10,6 +10,24 @@ namespace LinqDemo
     {
         static void Main(string[] args)
         {
+            string[] words = { "hello", "World", "Ajay", "Atos", "anythingelse" };
+            // linq query syntax
+            var query = from word in words
+                        where word.Length <= 5
+                        select word;
+            foreach (string w in query)
+            {
+                Console.Write(w.ToString() + " ");
+            }
+            Console.WriteLine();
+
+            //linq lambda syntax
+            var lambda = words.Where(word => word.Length <= 5);
+            foreach (string w in lambda)
+            {
+                Console.Write(w.ToString() + " ");
+            }
+            Console.ReadLine();
         }
     }
 }
